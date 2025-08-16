@@ -1,10 +1,5 @@
 @import "/home/flender/.cache/wal/colors-waybar.css";
 
-/*@define-color mauve @color9;
-@define-color red @color9;
-@define-color lavender @color7;
-@define-color text @color7;*/
-
 * {
     all: unset;
     font-family: "CodeNewRoman Nerd Font Mono", monospace;
@@ -13,44 +8,33 @@
     outline: none;
     border: none;
     text-shadow: none;
-    background-color: transparent;
 }
 
 window {
     all: unset;
     /*padding: 10px;*/
     border-radius: 20px;
+}
+
+#outer-box {
+    border-radius: 20px;
     border: 2px solid alpha(@color9, 0.9);
     background-color: @background;
 }
 
-/*#inner-box {
-    margin: 2px;
-    padding: 5px;
-    border: none;
-}*/
-
-/*#outer-box {
-    border: 2px solid alpha(@color1, 0.2);
-    border-radius: 20px;
-}*/
-
 #scroll {
     margin: 0px;
-    padding: 20px;
+    padding: 0 20px;
     border: none;
 }
 
 #input {
     all: unset;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px 20px;
+    padding: 10px;
     border: none;
     outline: none;
     color: @text;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    background-color: alpha(@background, 0.2);
 }
 
 #input image {
@@ -74,6 +58,7 @@ window {
     border: none;
     color: @text;
     outline: none;
+    margin-left: 10px;
 }
 
 #entry {
@@ -82,11 +67,6 @@ window {
     padding: 5px;
     border-radius: 6px;
 }
-
-/*#entry arrow {
-    border: none;
-    color: @lavender;
-}*/
 
 #entry:selected {
     background-color: @color9;

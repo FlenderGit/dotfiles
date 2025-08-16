@@ -2,7 +2,7 @@
 allow_images=true
 width=600
 show=drun
-prompt=Search
+prompt=Search...
 height=400
 term=kitty
 hide_scroll=true

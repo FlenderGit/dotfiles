@@ -9,6 +9,7 @@ main() {
     selected_wallpaper=$(echo "$choice" | sed 's/^img://')
     swww img "$selected_wallpaper" --transition-type any --transition-fps 60 --transition-duration .5
     wal -i "$selected_wallpaper" -n --cols16
+    source ~/.cache/wal/colors.sh && cp -r $wallpaper ~/.cache/wal/wallpaper
 }
 
 main
